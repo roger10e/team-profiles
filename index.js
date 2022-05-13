@@ -28,6 +28,8 @@
         //Intern will also include: school, getSchool(), getRole() (overridden to 'intern')
 
 //HELP WITH:
+    //Doing this with OOP?    
+
     //File Structure - what goes where?
     
     //'Inquirer' - connecting it, calling it, and ensuring it is properly ignored (+ 'dist' ?)
@@ -35,5 +37,83 @@
 
     // Generating HTML file from user input
         //From ReadMe generator? Lesson Activity?
+        //Having a difficult time envisioning this done with OOP
 
+//Including packages needed for this application
+//const fs = require('fs');
+//const inquirer = require('inquirer');
+//separation of objects / functions into other files to import here? Suggested?
 
+//Creating an array of questions for user input...
+const questions = [
+    {
+        type: 'input',
+        name: 'mgr-name',
+        message: 'What is the name of the team manager?'
+    },
+    {
+        type: 'input',
+        name: 'mgr-num',
+        message: 'What is the employee ID number of the team manager?'
+    },
+    {
+        type: 'input',
+        name: 'mgr-email',
+        message: 'What is the email address of the team manager?'
+    },
+    {
+        type: 'input',
+        name: 'mgr-office-num',
+        message: "What is  team manager's office number?"
+    },
+    // {
+    //     type: 'confirm',
+    //     name: 'add-egr',
+    //     message: 'Would you like to add information for an engineer?'
+    // },
+    {
+        type: 'input',
+        name: 'egr-name',
+        message: 'What is the name of the team engineer?'
+    },
+    {
+        type: 'input',
+        name: 'egr-email',
+        message: 'What is the email address of the team manager?'
+    },
+    {
+        type: 'input',
+        name: 'egr-num',
+        message: "What is the engineer's employee ID number?"
+    },
+    {
+        type: 'input',
+        name: 'egr-github',
+        message: "What is the engineer's Github username?"
+    },
+    // {
+    //     type: 'confirm',
+    //     name: 'add-egr',
+    //     message: 'Would you like to add information for an engineer?'
+    // },
+    {
+        type: 'input',
+        name: 'int-name',
+        message: "What is the team intern's name?"
+    },
+    {
+        type: 'input',
+        name: 'int-email',
+        message: "What is the intern's email address?"
+    },
+    {
+        type: 'input',
+        name: 'int-num',
+        message: "What is the intern's employee ID number?"
+    },
+    {
+        type: 'input',
+        name: 'int-name',
+        message: 'What school does the intern attend?'
+    }
+]
