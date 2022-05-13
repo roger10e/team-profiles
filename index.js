@@ -40,11 +40,13 @@
         //Having a difficult time envisioning this done with OOP
 
 //Including packages needed for this application
-//const fs = require('fs');
-//const inquirer = require('inquirer');
+const fs = require('fs');
+const inquirer = require('inquirer');
+//jest?
+
 //separation of objects / functions into other files to import here? Suggested?
 
-//Creating an array of questions for user input...
+//Creating an array of questions for user input, using Readme Generator as guide
 const questions = [
     {
         type: 'input',
@@ -117,3 +119,28 @@ const questions = [
         message: 'What school does the intern attend?'
     }
 ]
+
+//function copied from ReadMe Generator
+// function init() {
+//     inquirer
+//         .prompt(questions)
+//         .then((answers) => {
+//        
+//             console.log(answers)
+//        
+//             fs.writeFile('./readme.md', generateMarkdown(answers), err => {
+//                 if (err) throw new Error(err);
+//                 console.log('Page created! Check out index.html in this directory to see it!');
+//               });
+//         })
+//         .catch((error) => {
+//             if (error.isTtyError) {
+//        
+//             } else {
+//        
+//             }
+//         });
+// }
+
+// // Function call to initialize app
+// init();
